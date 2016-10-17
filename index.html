@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Dynamic Menu -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
-  <link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+  <script src="http://static.cloudstitch.io/cloudstitch.js"></script>
+  <link type="cloudstitch/gsheet" href="http://cloudstitch.io/sprigsgrille/sprigs-menu/datasource/menu" />
 </head>
 <body>
 
@@ -103,36 +103,22 @@
     <div class="clear">
       <div class="food-menu-content">
 
-        <!--<div connect="Soups-Salads!rows">
-            <div class="menu">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h4 class="menu-title"></h4>
-                  <div class="menu-detail" connect="Soups-Salads!col(Left-Col-Description)"></div>
-                </div>
-                <div class="col-sm-4 menu-price-detail">
-                  <h4 class="menu-price" connect="Soups-Salads!col(Left-Col-Price)"></h4>
-                  <div class="menu-label" connect="Soups-Salads!col(Left-Col-Label)"></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+        
+            
+        
 
 
         <h2 class="heading">Soups and Salads</h2>
-        
+        <div connect="Shareables!rows">
           <ul class="food-menu-list">
-          {{#each Soups-Salads}}
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
-              <h3 class="food-menu-heading">{{Name}}</h3>
-              <span class="food-menu-price">{{Price}}</span>
+              <h3 class="food-menu-heading" connect="Shareables!col(Right-Col-Name)"></h3>
+              <span class="food-menu-price" connect="Shareables!col(Right-Col-Price)"></span>
             </div>
-            <div class="food-menu-summary">
-              <p>{{Description}}</p>
+            <div class="food-menu-summary" connect="Shareables!col(Right-Col-Description)">
             </div>
           </li>
-          {{/each}}
         </div>
 
           <li class="food-menu-item">
@@ -196,6 +182,7 @@
           </li>
         </ul>
       </div>
+
       <div class="food-menu-content">
         <h2 class="heading">Starters</h2>
         <ul class="food-menu-list">
