@@ -1712,7 +1712,7 @@ html input[disabled] {
 .logo {
   width: 250px;
   height: 975px;
-  background: url(/img/sprigs-grille-logo.png) 50% 50% no-repeat;
+  background: url('/img/sprigs-grille-logo.png') 50% 50% no-repeat;
   display: inline-block;
   float: left;
   -webkit-transition: all .2s;
