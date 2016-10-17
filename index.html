@@ -98,19 +98,34 @@
   <div class="food-menu-block-inner container">
     <div class="clear">
       <div class="food-menu-content">
-        <h2 class="heading">Appetisers</h2>
+
+        <!--<div connect="Soups-Salads!rows">
+            <div class="menu">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="menu-title"></h4>
+                  <div class="menu-detail" connect="Soups-Salads!col(Left-Col-Description)"></div>
+                </div>
+                <div class="col-sm-4 menu-price-detail">
+                  <h4 class="menu-price" connect="Soups-Salads!col(Left-Col-Price)"></h4>
+                  <div class="menu-label" connect="Soups-Salads!col(Left-Col-Label)"></div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+<div connect="Soups-Salads!rows">
+        <h2 class="heading">Soups and Salads</h2>
         <ul class="food-menu-list">
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
-              <h3 class="food-menu-heading">Tzatski</h3>
-              <span class="food-menu-price">$3.99</span>
+              <h3 class="food-menu-heading" connect="Soups-Salads!col(Left-Col-Name)"></h3>
+              <span class="food-menu-price" connect="Soups-Salads!col(Left-Col-Price)"></span>
             </div>
-            <div class="food-menu-summary">
-              <p>
-                Refreshing traditional cucumber and garlic in yoghurt dip.
-              </p>
+            <div class="food-menu-summary" connect="Soups-Salads!col(Left-Col-Description)">
             </div>
           </li>
+</div>
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
               <h3 class="food-menu-heading">Aubergine Salad</h3>
