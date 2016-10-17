@@ -560,7 +560,7 @@ textarea.form-control {
 
 .module-image {
 	background-color: #222;
-	background-image: url(../assets/images/home-1.png);
+	background-image: url(../images/home-1.png);
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 1;
