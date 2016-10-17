@@ -14,6 +14,10 @@
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Dynamic Menu -->
+  <script src="http://static.cloudstitch.io/cloudstitch.js"></script>
+  <link type="cloudstitch/gsheet" href="http://cloudstitch.io/sprigsgrille/sprigs-menu/datasource/menu" />
 </head>
 <body>
 
@@ -114,9 +118,11 @@
             </div>
           </div> -->
 
-<div connect="Soups-Salads!rows">
+
         <h2 class="heading">Soups and Salads</h2>
-        <ul class="food-menu-list">
+        
+        <div connect="Soups-Salads!rows">
+          <ul class="food-menu-list">
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
               <h3 class="food-menu-heading" connect="Soups-Salads!col(Left-Col-Name)"></h3>
@@ -125,7 +131,8 @@
             <div class="food-menu-summary" connect="Soups-Salads!col(Left-Col-Description)">
             </div>
           </li>
-</div>
+        </div>
+
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
               <h3 class="food-menu-heading">Aubergine Salad</h3>
