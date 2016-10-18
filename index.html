@@ -17,7 +17,7 @@
 
   <!-- Dynamic Menu -->
   <script src="http://static.cloudstitch.io/cloudstitch.js"></script>
-  <link type="cloudstitch/gsheet" href="http://cloudstitch.io/sprigsgrille/sprigs-menu/datasource/menu" />
+  <link type="cloudstitch/gsheet" href="http://cloudstitch.io/sprigsgrille/sprigs-grille-menu/datasource/menu" />
 
 </head>
 <body>
@@ -110,18 +110,17 @@
 
 
         <h2 class="heading">Soups and Salads</h2>
-        <div connect="Shareables!rows">
+        <div connect="Soups-Salads!rows">
           <ul class="food-menu-list">
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
-              <h3 class="food-menu-heading" connect="Shareables!col(Right-Col-Name)"></h3>
-              <span class="food-menu-price" connect="Shareables!col(Right-Col-Price)"></span>
+              <h3 class="food-menu-heading" connect="Soups-Salads!col(Name)"></h3>
+              <span class="food-menu-price" connect="Soups-Salads!col(Price)"></span>
             </div>
-            <div class="food-menu-summary" connect="Shareables!col(Right-Col-Description)">
+            <div class="food-menu-summary" connect="Soups-Salads!col(Description)">
             </div>
           </li>
         </div>
-        <div widget="sprigsgrille/sprigs-menu"></div>
 
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
