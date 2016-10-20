@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Dynamic Menu -->
-  <script src="http://static.cloudstitch.io/cloudstitch.js"></script>
-  <link type="cloudstitch/gsheet" href="http://cloudstitch.io/sprigsgrille/sprigs-menu/datasource/menu" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
+  <link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
 
 </head>
 <body>
@@ -110,29 +110,21 @@
 
 
         <h2 class="heading">Soups and Salads</h2>
-        <div connect="Soups-Salads!rows">
-          <ul class="food-menu-list">
-          <li class="food-menu-item">
-            <div class="food-menu-item-header clear">
-              <h3 class="food-menu-heading" connect="Soups-Salads!col(Right-Col-Name)"></h3>
-              <span class="food-menu-price" connect="Soups-Salads!col(Right-Col-Price)"></span>
-            </div>
-            <div class="food-menu-summary" connect="Soups-Salads!col(Right-Col-Description)">
-            </div>
-          </li>
-        </div>
+        {{#each Soups-Salads}}
 
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
-              <h3 class="food-menu-heading">Aubergine Salad</h3>
-              <span class="food-menu-price">$5.50</span>
+              <h3 class="food-menu-heading">{{Left-Col-Name}}</h3>
+              <span class="food-menu-price">{{Left-Col-Price}}</span>
             </div>
             <div class="food-menu-summary">
               <p>
-                Pureed eggplant garlic, green pepper and tomato dip.
+                {{Left-Col-Description}}
               </p>
             </div>
           </li>
+        {{/each}}
+        
           <li class="food-menu-item">
             <div class="food-menu-item-header clear">
               <h3 class="food-menu-heading">Aubergine Salad</h3>
