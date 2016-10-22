@@ -2133,6 +2133,39 @@ html input[disabled] {
   margin: 0;
   padding: 0; }
 
+.events-block {
+  background: url(../img/events-dining.jpg) 0 50% no-repeat;
+  background-size: cover; }
+
+.events-block.active {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+  .events-block.active .feature-box {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+    .events-block.active .feature-box h2 {
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s; }
+    .events-block.active .feature-box blockquote {
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s; }
+
 .footer {
   padding-top: 20px;
   padding-bottom: 20px;
