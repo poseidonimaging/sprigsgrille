@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sprigs Grille</title>
+
+  <meta name="description" content="">
+  <meta name="theme-color" content="#444444">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Dynamic Menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.13/webcomponents-lite.min.js"></script>
+  <link rel="import" href="https://components.cloudstitch.com/cloudstitch-handlebars.html" />
+
+</head>
+<body>
+
+
+
+
+<div class="banner">
+  <div class="header">
+    <div class="header-inner container clear">
+      <img src="https://poseidonimaging.github.io/sprigsgrille/img/sprigs-grille-logo.png" alt="Sprigs Grille">
+      <input type="checkbox" id="navigation-toggle-checkbox" name="navigation-toggle-checkbox" class="navigation-toggle-checkbox sr">
+      <label for="navigation-toggle-checkbox" class="navigation-toggle-label" onclick>
+        <span class="navigation-toggle-label-inner">
+          <span class="sr">Navigation</span>
+        </span>
+      </label>
+      <div class="navigation">
+        <ul class="navigation-menu">
+          <li class="navigation-item"><a href="#about">About</a></li>
+          <li class="navigation-item"><a href="#ingredients">Ingredients</a></li>
+          <li class="navigation-item"><a href="#menu">Menu</a></li>
+          <li class="navigation-item"><a href="#reservations">Reservations</a></li>
+          <li class="navigation-item"><a href="#gallery">Gallery</a></li>
+          <li class="navigation-item"><a href="https://poseidonimaging.github.io/sprigsgrille/events.html" target="blank">Events</a></li>
+        </ul>
+        <ul class="navigation-social">
+          <li class="navigation-item-social"><a class="social social-facebook" href="https://www.facebook.com/sprigsgrille/"><span class="sr">Facebook</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<cloudstitch-handlebars user="sprigsgrille" app="new-sprigs-grille-menu"></cloudstitch-handlebars>
+-->
+ 
+
+<div id="menu" class="content-block food-menu-block">
+  <div class="food-menu-block-inner container">
+    <div class="clear">
+      <div class="food-menu-content">
+
+        <h2 class="heading">Soups and Salads</h2>
+        {{#each Soups-Salads}}
+
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">{{Left-Col-Name}}</h3>
+              <span class="food-menu-price">{{Left-Col-Price}}</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                {{Left-Col-Description}}
+              </p>
+            </div>
+          </li>
+        {{/each}}
+
+
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Aubergine Salad</h3>
+              <span class="food-menu-price">$5.25</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="heading">Salads</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Olive Special</h3>
+              <span class="food-menu-price">$5.99</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Refreshing traditional cucumber and garlic in yoghurt dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item food-menu-item-special">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Greek Salad</h3>
+              <span class="food-menu-price">$5.50</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Gusto Salad</h3>
+              <span class="food-menu-price">$5.25</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="food-menu-content">
+        <h2 class="heading">Starters</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Haloumi</h3>
+              <span class="food-menu-price">$3.99</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Refreshing traditional cucumber and garlic in yoghurt dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Spinach Pie</h3>
+              <span class="food-menu-price">$5.50</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="heading">Main Dishes</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Cornish Mackerel</h3>
+              <span class="food-menu-price">$5.99</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Refreshing traditional cucumber and garlic in yoghurt dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item food-menu-item-special">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Roast Lamb</h3>
+              <span class="food-menu-price">$5.50</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Fried Chicken</h3>
+              <span class="food-menu-price">$5.25</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Pastitsio</h3>
+              <span class="food-menu-price">$5.99</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pureed eggplant garlic, green pepper and tomato dip.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<div id="reservations" class="content-block reviews-block">
+  <div class="reviews-block-inner container">
+    <div class="feature-box text-center col-12-m col-8-l no-float center">
+      <h2 class="heading-secondary">Make Reservation</h2>
+      <link href="http://www.opentable.com/dcwidget/2015/dinerschoicebadges.css" rel="stylesheet" type="text/css" /><a href="http://www.opentable.com/rest_profile.aspx?rid=193552&restref=193552" class="ot-dc-badge ot-dc-badge--p">Book now</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="gallery" class="content-block reservations-block">
+  <div class="reservations-block-inner container">
+    <div class="clear">
+      <h2 class="heading">Gallery</h2>
+      <div class="reservation-block-img col-4-l none block-l">
+        <img class="img-fluid " src="img/chicken.jpg" alt="Food">
+      </div>
+      <div class="reservation-block-img col-6-m col-4-l none block-m">
+        <img class="img-fluid " src="img/food.jpg" alt="Food">
+      </div>
+      <div class="reservation-block-img col-6-m col-4-l none block-m">
+        <img class="img-fluid " src="img/fish-2.jpg" alt="Food">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <div class="footer-inner container">
+    <div class="clear">
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading">Why Visit Us</h3>
+        <p>
+          If you've been to Sprigs Grille, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food
+        </p>
+      </div>
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading">Opening Hours</h3>
+        <p>
+          <strong>Lounge:</strong> 4-11 Daily (Happy Hour 4-6 Daily) <br>
+          <strong>Dining Room:</strong> Dining Room 5-10 Daily
+        </p>
+        <ul class="payment-types icon-list-inline">
+          <li><span class="payment payment-mastercard"><span class="sr">Mastercard</span></a></li>
+          <li><span class="payment payment-visa"><span class="sr">Visa</span></span></li>
+          <li><span class="payment payment-american-express"><span class="sr">American Express</span></span></li>
+        </ul>
+      </div>
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading">Our Location</h3>
+        <p>
+          Sprigs Grille<br>
+          20001 NW Tanasbourne Dr.<br>
+          Hillsboro OR 97124<br>
+          503-718-0007 (ask for Sprigs)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/wow.js"></script>
+<script src="js/vendor/webfontloader.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>
